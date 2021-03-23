@@ -7,23 +7,15 @@ public class MyFirstProgram{
     hello ("everyone");
     hello ("Viktor");
 
-    double l = 5;
-    System.out.println("Square for " + l + " equal " + area(l));
+    Square s = new Square(5);
+    System.out.println("Square for " + s.l + " equal " + s.area());
 
-    double a = 5, b = 7;
-    System.out.println("Square for " + a + " and " + b + " equal " + area(a,b));
+    Rectangle r = new Rectangle(5, 7);
+    System.out.println("Square for " + r.a + " and " + r.b + " equal " + r.area());
   }
 
   public static void hello(String somebody) {
     System.out.println("Hello, " + somebody +"!!!");
-  }
-
-  public static double area (double l){
-    return l * l;
-  }
-
-  public static double area (double a, double b){
-    return a * b;
   }
 
 
